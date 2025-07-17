@@ -19,7 +19,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-brand">
-                <i class="fas fa-seedling"></i>
+                
                 <h1> Mechanic</h1>
             </div>
             <div class="nav-links">
@@ -30,13 +30,13 @@
                 
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-                <a href="#">Logout</a>
+                <a href="{% url 'signout' %}">Logout</a>
                 {% else %}
                 
                 <a href="#">About</a>
                 <a href="#">Contact</a>
-                <a href="#">Register</a>
-                <a href="#">Login</a>
+                <a href="{% url 'register' %}">Register</a>
+                <a href="{% url 'signin' %}">Login</a>
                 {% endif %}
 
             </div>

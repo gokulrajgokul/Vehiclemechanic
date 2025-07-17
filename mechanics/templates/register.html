@@ -2,11 +2,11 @@
 {% extends 'base.html' %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/register.css' %}">
-<link rel="icon" href="{% static 'images/icon.png' %}" type="image/png" />
+ 
 
 {% block content %}
 <div class="container" style="max-width: 500px; margin-top: 50px;">
-    <h2 class="text-center mb-4 text-success">🌿 Create Your Garden Account</h2>
+    <h2 class="text-center mb-4 text-success">Create Your Account</h2>
 
     {% include 'messages.html' %}
 
@@ -38,7 +38,7 @@
             <input type="password" id="confirmPassword" name="confirmPassword" required class="form-control">
         </div>
 
-        <button type="submit" class="btn btn-success w-100">🌱 Start Growing</button>
+        <button type="submit" class="btn btn-success w-100">Register</button>
 
         <div class="text-center mt-3">
             <p>Already part of the garden? <a href="{% url 'signin' %}" class="fw-bold text-success">Login here</a></p>
