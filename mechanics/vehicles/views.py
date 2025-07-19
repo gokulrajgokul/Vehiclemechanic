@@ -8,11 +8,8 @@ from django.contrib.auth import authenticate, login,logout
 def home(request):
     return render(request,'home.html')
 
-
 def base(request):
     return render(request,'base.html')
-
-
 
 def signin(request):
     if request.method == 'POST':
@@ -79,3 +76,6 @@ def register(request):
         return redirect('signin')
 
     return render(request,'register.html')
+
+def addmech(request):
+    return render(request,'addmechanic.html')
